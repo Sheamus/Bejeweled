@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bask.appopengl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/logo02"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        	android:name=".MainActivity"
+        	android:label="@string/app_name" />
+        <activity
+        	android:name=".BejeweledGameActivity"
+        	android:label="@string/app_name" />
+        <activity
+        	android:name=".BubblesActivity"
+        	android:label="@string/app_name" />
+        <service android:name=".BackgroundAudioService" /> 
+        <service android:name=".GameBgAudio01" />
+        <service android:name=".NoMoreMovesAudioService" />
+        </application>
+
+</manifest>
