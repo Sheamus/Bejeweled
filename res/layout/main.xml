@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/mainMenuImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bejeweled_menu" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnBejeweledStart"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:src="@drawable/exitselector" />
+
+    <ImageButton
+        android:id="@+id/btnAction"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/btnBejeweledStart"
+        android:layout_below="@+id/btnBejeweledStart"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>
